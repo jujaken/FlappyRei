@@ -8,10 +8,12 @@ namespace Scripts.UI
     public class ScoreText : UIBasic
     {
         [SerializeField] GameObject score;
+        [SerializeField] GameObject scoreDataRepo;
 
         private TMP_Text textMesh;
 
         private int Scores => score.GetComponent<Score>().Scores;
+        private int MaxScores => scoreDataRepo.GetComponent<ScoreDataRepo>().GetData();
 
         void Start()
         {
@@ -21,6 +23,6 @@ namespace Scripts.UI
         }
 
         public void UpdateScores()
-           =>  textMesh.text = $"{Scores}/{StaticData.MaxScores}";
+           =>  textMesh.text = $"{Scores}/{MaxScores}";
     }
 }

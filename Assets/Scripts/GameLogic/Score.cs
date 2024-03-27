@@ -13,10 +13,6 @@ namespace Scripts.GameLogic
         public void UpScores()
         {
             Scores++;
-
-            if (StaticData.MaxScores < Scores)
-                StaticData.MaxScores = Scores;
-
             scoreChanged?.Invoke();
         }
     }
