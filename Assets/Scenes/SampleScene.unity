@@ -519,10 +519,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   jumpHeight: 0.66
-  sprites:
-  - {fileID: 661517593, guid: 253128b487e1d734396d7e9efb4f12b8, type: 3}
-  - {fileID: -1572090626, guid: 253128b487e1d734396d7e9efb4f12b8, type: 3}
-  - {fileID: 1360790284, guid: 253128b487e1d734396d7e9efb4f12b8, type: 3}
+  eyeOpenSprite: {fileID: 661517593, guid: 253128b487e1d734396d7e9efb4f12b8, type: 3}
+  eyeCloseSprite: {fileID: -1572090626, guid: 253128b487e1d734396d7e9efb4f12b8, type: 3}
+  crySprite: {fileID: 1360790284, guid: 253128b487e1d734396d7e9efb4f12b8, type: 3}
 --- !u!1 &125238714
 GameObject:
   m_ObjectHideFlags: 0

@@ -119,11 +119,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rei_0
+      name: openEye
       rect:
         serializedVersion: 2
         x: 38
@@ -131,7 +144,7 @@ TextureImporter:
         width: 125
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,28 +157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rei_1
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 411
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f94653f5d13bd4741bbe4b079c5a1cbe
-      internalID: -734964078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rei_2
+      name: closeEye
       rect:
         serializedVersion: 2
         x: 191
@@ -173,7 +165,7 @@ TextureImporter:
         width: 125
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,28 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rei_3
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 411
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 322ef70a2331fe748a00a037238145da
-      internalID: -1400732489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rei_4
+      name: cry
       rect:
         serializedVersion: 2
         x: 343
@@ -215,7 +186,7 @@ TextureImporter:
         width: 125
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,28 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rei_5
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 411
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b534305b137ed414094b63621fb00fad
-      internalID: -1949352193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rei_6
+      name: defult
       rect:
         serializedVersion: 2
         x: 33
@@ -257,7 +207,7 @@ TextureImporter:
         width: 159
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rei_9
+      name: beer
       rect:
         serializedVersion: 2
         x: 227
@@ -278,7 +228,7 @@ TextureImporter:
         width: 57
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,15 +241,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rei_10
+      name: back
       rect:
         serializedVersion: 2
-        x: 332
-        y: 136
+        x: 331
+        y: 137
         width: 151
         height: 151
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,20 +272,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rei_0: 661517593
+      back: -1021952060
+      beer: 182730721
+      closeEye: -1572090626
+      cry: 1360790284
+      defult: 903417073
+      openEye: 661517593
+      rei_0: -461409869
       rei_1: -734964078
-      rei_10: -1021952060
       rei_11: -144115125
       rei_12: 1616502706
       rei_13: -669803047
-      rei_2: -1572090626
       rei_3: -1400732489
-      rei_4: 1360790284
       rei_5: -1949352193
-      rei_6: 903417073
       rei_7: 878213193
       rei_8: 1311916544
-      rei_9: 182730721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

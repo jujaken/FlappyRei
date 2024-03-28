@@ -9,7 +9,9 @@ namespace Scripts.GameLogic
         [SerializeField] UnityEvent onJump;
 
         [SerializeField] float jumpHeight = 1f;
-        [SerializeField] Sprite[] sprites;
+        [SerializeField] Sprite eyeOpenSprite;
+        [SerializeField] Sprite eyeCloseSprite;
+        [SerializeField] Sprite crySprite;
 
         public bool IsActive { get; private set; }
         public bool IsDead { get; private set; }
@@ -36,9 +38,9 @@ namespace Scripts.GameLogic
                 Jump();
 
             if (rb.velocity.y > 0)
-                spriteRenderer.sprite = sprites[1]; // eye closed
+                spriteRenderer.sprite = eyeCloseSprite;
             else
-                spriteRenderer.sprite = sprites[0]; // eye open
+                spriteRenderer.sprite = eyeOpenSprite;
         }
 
         void OnCollisionEnter2D(Collision2D collision)
@@ -49,7 +51,7 @@ namespace Scripts.GameLogic
             if (IsDead) return;
 
             IsDead = true;
-            spriteRenderer.sprite = sprites[2]; // cry sprite
+            spriteRenderer.sprite = crySprite;
 
             onDead?.Invoke();
         }
