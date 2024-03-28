@@ -58,6 +58,7 @@ namespace Scripts.GameLogic
         public void Jump()
         {
             if (!IsActive || IsDead) return;
+            rb.totalForce = Vector2.zero;
             rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             onJump?.Invoke();
         }
